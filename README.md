@@ -30,6 +30,7 @@ def copy(filename,newfile):
 filename=input("Enter an Existing File:")
 newfile=input("Enter a name for new file:")
 copy(filename,newfile)
+```
 ### OUTPUT:
 
 ![image](https://github.com/Saravanan2512/command-line-arguments-to-count-word/assets/144979117/c11d0b1a-4f27-4db3-bc15-dea8f44588e3)
