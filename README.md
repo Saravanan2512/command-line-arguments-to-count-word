@@ -6,37 +6,40 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Create the file.
-### Step 2: 
-Write some lines in that file.
-### Step 3: 
-Create python file.
-### Step 4:  
-Write a code to copy the content of the file to a new file.
-### Step 5: 
-Run the program.
-### Step 6: 
-Display the output.
+
+Import the sys.
+### Step 2:
+
+Open the file and assign it to data.
+### Step 3:
+
+Read the file and assign it to data.
+### Step 4:
+
+Split the data(data.split()).
+### Step 5:
+
+Print the word count by len(word).
+### Step 6:
+
+Close the file f1.
 ## PROGRAM:
 ```
 '''
 Developed by: SARAVANAN G
 RegisterNumber: 23005445
 '''
-def copy(filename,newfile):
-    with open(filename,'r') as fp:
-        with open(newfile,'w') as fp1:
-            data1=fp.read()
-            fp1.write(data1)
-filename=input("Enter an Existing File:")
-newfile=input("Enter a name for new file:")
-copy(filename,newfile)
+import sys
+f1=open(sys.argv[0])
+data=f1.read()
+word=data.split()
+print("The word count is",len(word))
+f1.close()
 ```
 ### OUTPUT:
 
-![image](https://github.com/Saravanan2512/command-line-arguments-to-count-word/assets/144979117/c11d0b1a-4f27-4db3-bc15-dea8f44588e3)
+![image](https://github.com/Saravanan2512/command-line-arguments-to-count-word/assets/144979117/205246c1-aaf5-4587-b800-0a6e69a4d6a1)
 
-![image](https://github.com/Saravanan2512/command-line-arguments-to-count-word/assets/144979117/4b52e56b-2b04-4afb-9b47-19703c2d9573)
 
 
 ## RESULT:
